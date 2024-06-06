@@ -1,88 +1,112 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda Minimalista</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Miguel García Melgar" />
+    <meta name="description" content="Copia de PcComponentes" />
+    <meta name="keywords" content="pinterest, imágenes, compartir"/>
+    <title>Fake PcComponentes</title>
+    <link rel="shortcut icon" href="logos/favicon.webp" type="image/x-icon"/>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="canonical" href="https://www.pccomponentes.com/" />
 </head>
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
+          <div id="menu" class="container_nav">
+            <p><img id="logo_menu" src="logos/logo-pccomponentes.svg" alt="Logo PcComponentes" loading="lazy"/></p>
+            <p><a href="/index.html" id="active">Inicio</a></p>
+            <p><a href="#">Todas las categorías</a></p>
+            <p>
+              <form class="search_bar" action="/buscar" method="GET">
+                <button type="submit"><img src="logos/lupa.png" alt="Buscar" loading="lazy"/></button>
+                <input type="text" name="q" placeholder="Buscar producto..."/>
+              </form>
+            </p>
+            <p><a href="/tu-perfil"><img src="logos/usuario-de-perfil.png" alt="Mi cuenta" loading="lazy"/>Mi cuenta</a></p>
+            <p><a href="/tu-perfil"><img src="logos/usuario-de-perfil.png" alt="Mi cesta" loading="lazy"/>Mi cesta</a></p>
+          </div>
         </nav>
-    </header>
-
+      </header>
     <main>
-      <section class="products">
-          <h2>Nuestros Productos</h2>
-          <article>
-              <img src="imagen1.jpg" alt="Producto 1">
-              <h3>Producto 1</h3>
-              <p>Descripción del producto 1.</p>
-              <a href="#" rel="noopener">Ver producto</a>
-          </article>
-          <article>
-              <img src="imagen2.jpg" alt="Producto 2">
-              <h3>Producto 2</h3>
-              <p>Descripción del producto 2.</p>
-              <a href="#" rel="noopener">Ver producto</a>
-          </article>
-          <!-- Repetir el bloque article para los demás productos -->
-          <article>
-              <img src="imagen3.jpg" alt="Producto 3">
-              <h3>Producto 3</h3>
-              <p>Descripción del producto 3.</p>
-              <a href="#" rel="noopener">Ver producto</a>
-          </article>
-          <article>
-              <img src="imagen4.jpg" alt="Producto 4">
-              <h3>Producto 4</h3>
-              <p>Descripción del producto 4.</p>
-              <a href="#" rel="noopener">Ver producto</a>
-          </article>
-          <article>
-              <img src="imagen5.jpg" alt="Producto 5">
-              <h3>Producto 5</h3>
-              <p>Descripción del producto 5.</p>
-              <a href="#" rel="noopener">Ver producto</a>
-          </article>
-          <article>
-              <img src="imagen6.jpg" alt="Producto 6">
-              <h3>Producto 6</h3>
-              <p>Descripción del producto 6.</p>
-              <a href="#" rel="noopener">Ver producto</a>
-          </article>
-          <article>
-              <img src="imagen7.jpg" alt="Producto 7">
-              <h3>Producto 7</h3>
-              <p>Descripción del producto 7.</p>
-              <a href="#" rel="noopener">Ver producto</a>
-          </article>
-          <article>
-              <img src="imagen8.jpg" alt="Producto 8">
-              <h3>Producto 8</h3>
-              <p>Descripción del producto 8.</p>
-              <a href="#" rel="noopener">Ver producto</a>
-          </article>
-          <article>
-              <img src="imagen9.jpg" alt="Producto 9">
-              <h3>Producto 9</h3>
-              <p>Descripción del producto 9.</p>
-              <a href="#" rel="noopener">Ver producto</a>
-          </article>
-          <article>
-              <img src="imagen10.jpg" alt="Producto 10">
-              <h3>Producto 10</h3>
-              <p>Descripción del producto 10.</p>
-              <a href="#" rel="noopener">Ver producto</a>
-          </article>
-      </section>
+        <h2>Ofertas destacadas</h2>
+        <section class="products">
+            <article>
+                <img src="img/119-tcl-55p61b-55-led-ultrahd-4k-google-tv.webp" alt="TCL 55P61B 55&quot; LED UltraHD 4K Google TV" loading="lazy">
+                <h3>TCL 55P61B</h3>
+                <p>55&quot; LED UltraHD 4K Google TV</p>
+                <div class="card"><div class="price_tag"><span class="new_price">329€</span><span class="old_price">409€</span></div></div>
+                <a href="#https://www.pccomponentes.com/tv-tcl-55p61b-55-led-ultrahd-4k-google-tv" rel="noopener">Ver producto</a>
+            </article>
+            <article>
+                <img src="img/1774-asus-vivobook-go-e1504fa-nj644-amd-ryzen-5-7520u-16gb-512gb-ssd-radeon-610m-156.webp" alt="ASUS Vivobook Go E1504FA-NJ644 AMD Ryzen 5 7520U/16GB/512GB SSD/Radeon 610M/15.6&quot;" loading="lazy">
+                <h3>ASUS Vivobook Go E1504FA-NJ644</h3>
+                <p>AMD Ryzen 5 7520U/16GB/512GB SSD/Radeon 610M/15.6&quot;</p>
+                <div class="card"><div class="price_tag"><span class="new_price">399€</span><span class="old_price">599€</span></div></div>
+                <a href="#https://www.pccomponentes.com/asus-vivobook-go-e1504fa-nj644-amd-ryzen-5-7520u-16gb-512gb-ssd-radeon-610m-156" rel="noopener">Ver producto</a>
+            </article>
+            <article>
+                <img src="img/1669-apple-iphone-15-pro-max-256gb-titanio-natural-libre.webp" alt="Apple iPhone 15 Pro Max 256GB Titanio Natural Libre" loading="lazy">
+                <h3>Apple iPhone 15 Pro Max</h3>
+                <p>256GB Titanio Natural Libre</p>
+                <div class="card"><div class="price_tag"><span class="new_price">1305,19€</span><span class="old_price">1.469€</span></div></div>
+                <a href="#https://www.pccomponentes.com/apple-iphone-15-pro-max-256gb-titanio-natural-libre" rel="noopener">Ver producto</a>
+            </article>
+            <article>
+                <img src="img/117-lg-65ur76006ll-65-led-ultrahd-4k-hdr10-pro.webp" alt="LG 65UR76006LL 65&quot; LED UltraHD 4K HDR10 Pro" loading="lazy">
+                <h3>LG 65UR76006LL</h3>
+                <p>65&quot; LED UltraHD 4K HDR10 Pro</p>
+                <div class="card"><div class="price_tag"><span class="new_price">499,99€</span><span class="old_price">829€</span></div></div>
+                <a href="#https://www.pccomponentes.com/tv-lg-65ur76006ll-65-led-ultrahd-4k-hdr10-pro" rel="noopener">Ver producto</a>
+            </article>
+        </section>
+        <h2>Basado en tu navegación</h2>
+        <section class="products">
+            <article>
+                <img src="img/1534-acer-nitro-v-15-anv15-51-579p-intel-core-i5-13420h-16gb-512gb-ssd-rtx-4050-156.webp" alt="Acer Nitro V15 ANV15-51-579P Intel Core i5-13420H/16GB/512GB SSD/RTX 4050/15.6&quot;" loading="lazy">
+                <h3>Acer Nitro V15 ANV15-51-579P</h3>
+                <p>Intel Core i5-13420H/16GB/512GB SSD/RTX 4050/15.6&quot;</p>
+                <div class="card"><div class="price_tag"><span class="new_price">759€</span><span class="old_price">1.098,99€</span></div></div>
+                <a href="#https://www.pccomponentes.com/acer-nitro-v-15-anv15-51-579p-intel-core-i5-13420h-16gb-512gb-ssd-rtx-4050-156" rel="noopener">Ver producto</a>
+            </article>
+            <article>
+                <img src="img/1934-pccom-ready-amd-ryzen-7-5800x-32gb-1tb-ssd-rtx-4060-ti-comprar.webp" alt="PcCom Ready AMD Ryzen 7 5800X / 32GB / 1TB SSD / RTX 4060 Ti" loading="lazy">
+                <h3>PcCom Ready </h3>
+                <p>AMD Ryzen 7 5800X / 32GB / 1TB SSD / RTX 4060 Ti</p>
+                <div class="card"><div class="price_tag"><span class="new_price">1.199€</span><span class="old_price">1.473,73€</span></div></div>
+                <a href="#https://www.pccomponentes.com/pccom-ready-amd-ryzen-7-5800x-32gb-1tb-ssd-rtx-4060-ti" rel="noopener">Ver producto</a>
+            </article>
+            <article>
+                <img src="img/1818-sony-playstation-5-especificaciones.webp" alt="Sony PlayStation 5 Slim 1 TB de almacenamiento" loading="lazy">
+                <h3>Sony PlayStation 5 Slim</h3>
+                <p>1 TB de almacenamiento</p>
+                <div class="card"><div class="price_tag"><span class="new_price">549,99€</span></div></div>
+                <a href="#https://www.pccomponentes.com/sony-playstation-5-slim" rel="noopener">Ver producto</a>
+            </article>
+            <article>
+                <img src="img/196-xiaomi-redmi-note-13-8-256gb-negro-libre.webp" alt="Xiaomi Redmi Note 13 8/256GB Negro Libre" loading="lazy">
+                <h3>Xiaomi Redmi Note 13</h3>
+                <p>8/256GB Negro Libre</p>
+                <div class="card"><div class="price_tag"><span class="new_price">194,19€</span><span class="old_price">249€</span></div></div>
+                <a href="#https://www.pccomponentes.com/xiaomi-redmi-note-13-8-256gb-negro-libre" rel="noopener">Ver producto</a>
+            </article>
+            <article>
+                <img src="img/1306-xiaomi-redmi-note-13-pro-5g-8-256gb-azul-libre.webp" alt="Xiaomi Redmi Note 13 Pro 5G 8/256GB Azul Libre" loading="lazy">
+                <h3>Xiaomi Redmi Note 13 Pro</h3>
+                <p>5G 8/256GB Azul Libre</p>
+                <div class="card"><div class="price_tag"><span class="new_price">294,94€</span><span class="old_price">399€</span></div></div>
+                <a href="#https://www.pccomponentes.com/xiaomi-redmi-note-13-pro-5g-8-256gb-azul-libre" rel="noopener">Ver producto</a>
+            </article>
+            <article>
+                <img src="img/1265-apple-iphone-15-pro-max-256gb-titanio-negro-libre.webp" alt="Apple iPhone 15 Pro Max 256GB Titanio Negro Libre" loading="lazy">
+                <h3>Apple iPhone 15 Pro Max</h3>
+                <p>256GB Titanio Negro Libre</p>
+                <div class="card"><div class="price_tag"><span class="new_price">1459€</span></div></div>
+                <a href="#https://www.pccomponentes.com/apple-iphone-15-pro-max-256gb-titanio-negro-libre" rel="noopener">Ver producto</a>
+            </article>
+        </section>
     </main>
   
     <footer>

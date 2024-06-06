@@ -12,34 +12,108 @@
   font-family:'Open Sans', 'Roboto'
 }
 
+:root {
+  --colorCorp1:#f5f5f5;
+  --colorCorp2: #333;
+  --colorCorp3:#fff;
+  --colorCorp4:#0000001a;
+}
+
 ul {
   list-style-type: none;
 }
 
 /* Estilos generales */
 body {
-  background-color: #f5f5f5;
-  color: #333;
+  background-color: var(--colorCorp1);
+  color: var(--colorCorp2);
 }
 
 header {
-  background-color: #fff;
+  background-color: var(--colorCorp3);
   padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px var(--colorCorp4);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 10;
 }
 
-nav ul {
+#logo_header {
+  height: 200px;
+  position: absolute;
+  top: 50px;
+  left: 400px;
+}
+
+nav {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  background-color: transparent;
+}
+
+nav p {
+  padding: 10px;
+}
+
+nav p a {
+  color: var(--colorCorp2);
+  text-decoration: none;
+  font-size: 24px;
+}
+
+nav p a:hover {
+  font-size: 28px;
+  font-style: solid;
+}
+
+.container_nav {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+#menu {
+  height: 24;
+  width: 24;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+
+#logo_menu {
+  padding: 1px;
+}
+
+#active {
+  font-size: 28px;
+  font-style: solid;
+}
+
+.container_nav p {
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
-nav ul li {
-  margin: 0 10px;
+.container_nav img {
+  height: 32px;
+  width: 32px;
 }
 
-nav ul li a {
-  text-decoration: none;
-  color: #333;
+.search_bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 150%;
+}
+
+.search_bar input {
+  width: 93%;
 }
 
 main {
@@ -54,9 +128,9 @@ main {
 }
 
 .products article {
-  background-color: #fff;
+  background-color: var(--colorCorp3);
   border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px var(--colorCorp4);
   margin-bottom: 20px;
   padding: 20px;
   max-width: 300px;
@@ -82,15 +156,15 @@ main {
   text-align: center;
   margin-top: 10px;
   text-decoration: none;
-  background-color: #333;
-  color: #fff;
+  background-color: var(--colorCorp2);
+  color: var(--colorCorp3);
   padding: 10px 0;
   border-radius: 5px;
 }
 
 footer {
-  background-color: #333;
-  color: #fff;
+  background-color: var(--colorCorp2);
+  color: var(--colorCorp3);
   text-align: center;
   padding: 20px;
   margin-top: 20px;
@@ -118,37 +192,5 @@ footer {
   .products article {
       max-width: calc(50% - 40px);
   }
-}
-
-/* Variables CSS */
-:root {
-  --primary-color: #333;
-  --secondary-color: #fff;
-  --background-color: #f5f5f5;
-}
-
-body {
-  background-color: var(--background-color);
-  color: var(--primary-color);
-}
-
-header {
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
-}
-
-footer {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-}
-
-.products article {
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
-}
-
-.products article a {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
 }
 
