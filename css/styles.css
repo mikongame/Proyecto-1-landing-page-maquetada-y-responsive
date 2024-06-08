@@ -259,6 +259,10 @@ footer ul {
     height: auto;
   }
 
+  nav {
+    height: auto;
+  }
+
   .container_nav {
     flex-direction: column;
     align-items: center;
@@ -279,7 +283,7 @@ footer ul {
   }
 
   .search_bar input {
-    width: calc(100% - 150px); /* Ajustar el ancho de la barra de búsqueda */
+    width: calc(100% - 80px); /* Ajustar el ancho de la barra de búsqueda */
     font-size: 18px;
   }
 
@@ -304,6 +308,11 @@ footer ul {
 /* Media queries para tablet */
 @media screen and (min-width: 376px) and (max-width: 768px) {
   header {
+    height: auto;
+    justify-content: flex-start;
+  }
+
+  nav {
     height: auto;
   }
 
