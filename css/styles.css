@@ -49,7 +49,7 @@ nav {
 }
 
 nav p {
-  padding: 10px;
+  padding: 5px 10px;
 }
 
 nav p a {
@@ -239,8 +239,9 @@ footer ul {
 .logosrrss {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   padding: 0 20px;
+  align-items: stretch;
 }
 
 .copy {
@@ -256,14 +257,16 @@ footer ul {
 /* Media queries para dispositivos móviles */
 @media screen and (max-width: 375px) {
   header {
-    height: auto;
+    max-width: 375px;
   }
 
   nav {
-    height: auto;
+    max-width: 375px;
+    padding: 5px;
   }
 
   .container_nav {
+    max-width: 375px;
     flex-direction: column;
     align-items: center;
   }
@@ -276,6 +279,15 @@ footer ul {
 
   header nav p a {
     font-size: 18px;
+  }
+
+  #menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    flex-wrap: nowrap;
+    align-content: stretch;
   }
 
   #logo_menu {
@@ -297,7 +309,7 @@ footer ul {
   }
 
   main {
-    margin-top: calc(100px + 40px); /* Ajustar según el tamaño del header */
+    margin-top: auto; /* Ajustar según el tamaño del header */
   }
 
   footer ul {
@@ -308,12 +320,14 @@ footer ul {
 /* Media queries para tablet */
 @media screen and (min-width: 376px) and (max-width: 768px) {
   header {
-    height: auto;
+    max-width: 375px;
+    flex-wrap: wrap;
     justify-content: flex-start;
   }
 
   nav {
     height: auto;
+    padding: 0;
   }
 
   .container_nav {
@@ -327,12 +341,8 @@ footer ul {
     margin: 5px 0;
   }
 
-  header nav p a {
-    font-size: 20px;
-  }
-
   #logo_menu {
-    height: 55px;
+    height: 45px;
   }
 
   .search_bar input {
@@ -350,10 +360,184 @@ footer ul {
   }
 
   main {
-    margin-top: calc(100px + 40px); /* Ajustar según el tamaño del header */
+    margin-top: 380px; /* Ajustar según el tamaño del header */
   }
 
   footer ul {
     padding-bottom: 30px;
+  }
+}
+
+
+@media screen and (max-width: 375px) {
+  header {
+    max-width: 375px;
+    position: relative;
+  }
+  footer {
+    max-width: 375px;
+  }
+  .container_nav {
+    max-width: 375px;
+  }
+  .container_foot {
+    max-width: 375px;
+  }
+  div#menu {
+    max-width: 375px;
+    display: flex;
+    height: auto;
+  }
+  footer > div {
+    flex-direction: column;
+  }
+  footer > div > div {
+    margin-bottom: 18px;
+    text-align: center;
+  }
+  footer > div > div > p {
+    display: flex;
+    justify-content: center;
+  }
+  footer h3 {
+    font-size: 18px;
+  }
+  footer li {
+    font-size: 16px;
+  }
+  footer p {
+    font-size: 18px;
+  }
+  footer a {
+    font-size: 16px;
+  }
+  .copy {
+    text-align: center;
+    padding: 10px 0;
+    max-width: 375px;
+    font-size: 18px;
+  }
+  .container_nav a {
+    font-size: 16px;
+  }
+
+a#active {
+    font-size: 18px;
+}
+  .container_nav img {
+    height: 24px;
+    width: 24px;
+    margin: 5px 10px;
+  }
+  .search_bar {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-content: stretch;
+    align-items: stretch;
+    flex-wrap: wrap;
+  }
+  .search_bar input {
+    width: 80%;
+  }
+  .flex {
+    flex-direction: column;
+  }
+  .card {
+    max-width: 100%;
+    margin: 5px;
+  }
+  .card img {
+    width: 100%;
+  }
+  .logosrrss a img {
+    padding: 5px;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 768px) {
+  header {
+    max-width: 768px;
+  }
+  footer {
+    max-width: 768px;
+  }
+  .container_nav {
+    max-width: 768px;
+  }
+  .container_foot {
+    max-width: 768px;
+  }
+  div#menu {
+    max-width: 768px;
+    display: flex;
+    height: auto;
+  }
+  footer > div {
+    flex-direction: column;
+  }
+  footer > div > div {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  footer > div > div > p {
+    display: flex;
+    justify-content: center;
+  }
+  footer h3 {
+    font-size: 20px;
+  }
+  footer li {
+    font-size: 18px;
+  }
+  footer p {
+    font-size: 20px;
+  }
+  footer a {
+    font-size: 18px;
+  }
+  .copy {
+    text-align: center;
+    padding: 10px 0;
+    max-width: 768px;
+    font-size: 20px;
+  }
+  .container_nav a {
+    font-size: 18px;
+  }
+
+a#active {
+    font-size: 20px;
+}
+  .container_nav img {
+    height: 24px;
+    width: 24px;
+    margin: 10px;
+  }
+  .search_bar {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-content: stretch;
+    align-items: stretch;
+    flex-wrap: wrap;
+  }
+  .search_bar input {
+    width: 90%;
+  }
+  .flex {
+    flex-direction: column;
+  }
+  .card {
+    max-width: 100%;
+    margin: 5px;
+  }
+  .card img {
+    width: 100%;
+  }
+  .logosrrss a img {
+    padding: 5px;
+    /* width: 20px; */
+    /* height: 20px; */
   }
 }
